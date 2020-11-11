@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Memory Game</title>
+    <link rel="stylesheet" href="css/style.css"
+</head>
+<body>
+    <div id="container-everything">
+        <span class="container" id="card1"><img class="card" id="img1" src="imgs/back.png"> <img id="guess1" class="guess" width="128" height="173"></span>
+        <span class="container" id="card2"><img class="card" id="img2" src="imgs/back.png"><img id="guess2" class="guess" width="128" height="173"></span>
+        <span class="container" id="card3"><img class="card" id="img3" src="imgs/back.png"><img id="guess3" class="guess" width="128" height="173"></span>
+        <br>
+        <span class="container" id="card4"><img class="card" id="img4" src="imgs/back.png"><img id="guess4" class="guess" width="128" height="173"></span>
+        <span class="container" id="card5"><img class="card" id="img5" src="imgs/back.png"><img id="guess5" class="guess" width="128" height="173"></span>
+        <span class="container" id="card6"><img class="card" id="img6" src="imgs/back.png"><img id="guess6" class="guess" width="128" height="173"></span>
+    </div>
+    <div id="overlay" onclick="off()">
+        <div id="text">You Won, congratulations!</div>
+        <div id="text2">Click here to play again.</div>
+      </div>
+      
+      <script>
+      function overlayTextOn() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      
+      function overlayTextOff() {
+        document.getElementById("overlay").style.display = "none";
+      }
+      </script>
+    
+</body>
+<script src="main.js"></script>
+<style>
+    .guess{
+        display: none;
+    }
+</style>
+</html>
